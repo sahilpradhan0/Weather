@@ -13,7 +13,6 @@ searchInput.addEventListener('click',() => {
 })
 
 searchInput.addEventListener('change',(e) => {
-    console.log(search.value);
     getWeather();
 })
 
@@ -21,11 +20,8 @@ async function getWeather() {
     try {
         const resp = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${search.value}&appid=466c6c69d1152e87187f9d2a88b08235`);
         const respData = await resp.json();
-        console.log(respData);
-        console.log(respData.cod);
         //error
         if(respData.cod == 404){
-            console.log(respData.message);
             err.innerHTML = "404 ERROR !! \n";
             anotherErr.innerHTML = respData.message;
             humidity.innerHTML = 0;
@@ -35,6 +31,8 @@ async function getWeather() {
             deg.classList.add("deg_err");
             cel.classList.add("cel_err");
             city.classList.add("city_err");
+
+            
 
         }
         // no error
@@ -48,6 +46,9 @@ async function getWeather() {
             temp.classList.remove("temp_err");
             deg.classList.remove("deg_err");
             cel.classList.remove("cel_err");
+            console.log(respData.name);
+
+            console.log(KeyboardEvent);
         }
         
     } catch (error) {

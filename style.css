@@ -19,7 +19,7 @@ body{
     background: #758a99 !important;
     border: 2px solid #758a99;
     height: 500px;
-    width:  350px;
+    max-width:  450px;
     display: flex;
     justify-content: center;
     flex-direction: column;
