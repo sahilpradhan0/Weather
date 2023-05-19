@@ -1,0 +1,58 @@
+@media( max-width: 400px){
+    .main_weather{
+        width:  220px;
+        height: 310px;
+        margin-top: 30%;
+    }
+    .search_city input {
+        width: 125px;
+    }
+    .weather_icon img {
+        width: 80px;
+        height: 80px;
+    }
+    .temp, .deg, .cel, .city {
+        font-size: 1.2rem;
+    }
+    .err_msg {
+        font-size: 1.2rem;
+    }
+    .another_err_msg {
+        font-size: 1rem;
+    }
+    .other_options {
+        margin: 30px 20px;
+    }
+    span{
+        font-size: 0.65rem;
+    }
+    .humid h6, .wind h6 {
+        font-size: 0.7rem;
+    }
+    .other_options {
+        margin: 0;
+    }
+    .humidity {
+        margin-right: 10px;
+    }
+    .wind_speed{
+        margin-left: 10px;
+    }
+    .wind{
+        margin-left: 0px;
+    }
+    .search_city input{
+        padding: 0px 10px;
+        margin-right: 10px;
+    }
+    .temperature {
+        margin-top: 15px;
+    }
+    .city_name{
+        margin-top: -9px;
+    }
+    .search_city svg{
+        width: 30px;
+        height: 30px;
+    }
+}

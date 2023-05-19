@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+body{
+    background: #647e90 !important;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.main_weather{
+    background: #758a99 !important;
+    border: 2px solid #758a99;
+    height: 500px;
+    width:  350px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12%;
+    border-radius: 18px;
+    padding: 8px;
+}
+
+/* Search City*/
+
+
+.search_city input{
+    /* width: 270px; */
+    padding: 5px 18px;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 50px;
+    color: black;
+    margin-right: 15px;
+}
+.search_city svg{
+    fill:rgb(253, 254, 255);
+    background: rgb(209, 206, 202);
+    padding: 8px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/*temperature*/
+
+.temperature{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.weather_icon img{
+    width: 100px;
+    height: 100px;
+}
+
+.temper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.temper span{
+    margin-right: 2px;
+}
+
+.temp,.deg,.cel,.city{
+    color: white;
+    font-size: 2.1rem;
+    text-align: center;
+}
+.temp{
+    font-weight: bold;
+}
+.city_name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*other_options*/
+
+.other_options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 20px;
+}
+
+.humidity{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 40px;
+}
+.humid{
+    margin-left: 10px;
+}
+.wind_speed{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 40px;
+}
+.wind{
+    margin-left: 5px;
+    text-align: center;
+}
+
+span{
+    font-size: 1.1rem;
+    margin-left: 2px;
+}
+
+.cel_err{
+    display: none;
+}
+.temp_err{
+    display: none;
+}
+.deg_err{
+    display: none;
+}
+.city_err{
+    display: none;
+}
+
+.err_msg,.another_err_msg{
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: 'Roboto Slab', serif;
+    position: relative;
+    /* left: -5%; */
+}
+.err_msg{
+    font-size: 2.5rem;
+}
+
+#humidity, #windspeed{
+    font-weight: bold;
+}
